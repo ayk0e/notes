@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('C:/Users/k1/Bodoni Moda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 1462px;
+    height: 719.2px;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#navbar {
+    width: 250px;
+    height: 719.2px;
+}
+
+#note-container {
+    width: 250px;
+    height: 100%;
+    background-color: rgb(55, 55, 55);
+    top: 0px;
+    position: absolute;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82, 82, 82);
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.note {
+    width: 100%;
+    height: 30px;
+    background-color: lightseagreen;
+    border-bottom: 1px solid black;
+}
+
+.note-arrowhead {
+    width: 10px;
+    height: 10px;
+    top: 6.5px;
+    left: 5px;
+    position: relative;
+}
+
+.note-name {
+    top: -13px;
+    left: 25px;
+    position: relative;
+}
+
+.subnotes {
+    display: none;
+    list-style-type: none;
+}
+
+.subnote {
+    width: 225px;
+    color: white;
+    left: 25px;
+    position: relative;
+    font-size: 14px;
+}
+
+#options-file {
+    width: 150px;
+    height: 200px;
+    background-color: greenyellow;
+    top: 150px;
+    left: 150px;
+    position: absolute;
+    display: none;
+}
+
+.textarea {
+    width: calc(100% - 250px);
+    height: 18px;
+    color: white;
+    background-color: transparent;
+    left: 250px;
+    position: relative;
+    display: block;
+    border: 0px solid black;
+    outline: none;
+}
