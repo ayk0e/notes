@@ -8,8 +8,17 @@ let d = "";
 
 function getData() {
     let datas = JSON.parse(localStorage.getItem("notes"));
-    n = datas[0];
-    data = datas[1];
+    if(datas === null || datas === undefined) {
+        localStorage.setItem("notes", JSON.stringify([0, {
+            home: {
+                page: [],
+                notes: []
+            }
+        }]));
+    } else {
+        n = datas[0];
+        data = datas[1];
+    }
     //console.log(datas);
 }
 
