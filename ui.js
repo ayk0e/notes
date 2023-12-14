@@ -125,7 +125,7 @@ function savePage() {
         let child = children[i];
 
         if(child !== null && child !== undefined && child.id !== undefined) {
-            //console.log("balls", child.id);
+            //console.log("b", child.id);
             data[p].page.push(child.id);
             data[child.id] = {
                 type: child.localName,
